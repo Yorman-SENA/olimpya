@@ -93,3 +93,8 @@
 .content-product div {
     justify-items: center;
 }
+
+.logo-center {
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+}
