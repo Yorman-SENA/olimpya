@@ -4,24 +4,34 @@ body {
 
 .title {
     text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    color: #6C4D5C;
 }
 
 .side-menu {
-    background-color: #f8f9fa;
+    background-color: #F9F1E6;
     height: 100vh;
     padding-top: 20px;
+    border: 1px solid #000;
 }
 
 .side-menu a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     padding: 10px 15px;
     display: block;
     font-weight: bold;
+    border-radius: 12px;
+    background-color: #6C4D5C;
+    border: 1px solid #000;
+    margin: 15px;
+    text-align: center;
 }
 
 .side-menu a:hover {
-    background-color: #e9ecef;
+    background-color: #835d6f;
 }
 
 .content {
@@ -33,8 +43,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #000000;
 }
 
 .logo a {
@@ -52,7 +62,7 @@ body {
 
 .main-content {
     display: flex;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 .products {
@@ -68,13 +78,70 @@ body {
 }
 
 .card {
-    width: 18rem;
-    height: 400px;
+    height: 350px;
+    /* Altura de cada tarjeta */
+    position: relative;
+    /* Posicionamiento relativo para usar absolute en el hijo */
+    width: 100%;
+    /* Ancho por defecto (ocupa todo el contenedor) */
+    max-width: 300px;
+    /* Ancho máximo de cada tarjeta */
+    padding: 15px;
+    /* Espaciado interno */
+    border: 1px solid #ddd;
+    /* Borde de la tarjeta */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    background-color: #fff;
+    /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    margin: 10px auto;
+    /* Separación entre tarjetas y centrado automático */
+    overflow: hidden;
+    /* Evita que el contenido se salga */
+}
+
+.card-body {
+    padding-bottom: 50px;
+    /* Deja espacio para el botón */
 }
 
 .card-img-top {
-    height: 250px;
+    height: 200px;
     object-fit: contain;
+}
+
+.card-btn {
+    position: absolute;
+    /* Permite fijar el botón dentro de la tarjeta */
+    bottom: 5px;
+    /* 5px desde el borde inferior */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta el centrado */
+    background-color: #6C4D5C;
+    /* Color verde */
+    color: #fff;
+    /* Texto blanco */
+    border: none;
+    /* Sin bordes */
+    padding: 10px 20px;
+    /* Tamaño del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+    font-size: 14px;
+    /* Tamaño del texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.card-btn:hover {
+    background-color: #8d6377;
+    /* Cambia el color en hover */
 }
 
 .content-product {
@@ -144,4 +211,17 @@ body {
     /* Centra horizontalmente */
     align-items: center;
     /* Centra verticalmente */
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto;
+    /* Centra horizontalmente */
+    height: auto;
+    width: 150px;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #8d6377;
 }
