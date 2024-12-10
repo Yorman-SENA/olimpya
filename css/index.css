@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 .title {
     text-align: center;
 }
@@ -94,7 +98,50 @@
     justify-items: center;
 }
 
-.logo-center {
-    display: block;
-    margin: 0 auto; /* Centra horizontalmente */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid green;
+    padding: 20px;
+    background-color: #fef8e4;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.email {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.cell {
+    border: 2px solid green;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
 }
