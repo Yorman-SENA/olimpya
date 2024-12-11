@@ -112,6 +112,16 @@ body {
     object-fit: contain;
 }
 
+.card-body svg {
+    position: absolute;
+    bottom: 5px;
+    left: 30%;
+    transform: translateX(-30%);
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
 .card-btn {
     position: absolute;
     /* Permite fijar el botón dentro de la tarjeta */
